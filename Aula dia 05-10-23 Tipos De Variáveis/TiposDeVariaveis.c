@@ -1,37 +1,37 @@
-#include<stdio.h>/*Este é uma biblioteca de cabeçalho contém declarações de funções úteis para entrada e saída de dados.
-“std” é a abreviação de “standard” (padrão em inglês) e “io” é a abreviação de “Input/Output” (entrada e saída).
-Portanto, “stdio” significa “Entrada e saída padronizadas”.*/
+#include<stdio.h>/*Este Ã© uma biblioteca de cabeÃ§alho contÃ©m declaraÃ§Ãµes de funÃ§Ãµes Ãºteis para entrada e saÃ­da de dados.
+â€œstdâ€ Ã© a abreviaÃ§Ã£o de â€œstandardâ€ (padrÃ£o em inglÃªs) e â€œioâ€ Ã© a abreviaÃ§Ã£o de â€œInput/Outputâ€ (entrada e saÃ­da).
+Portanto, â€œstdioâ€ significa â€œEntrada e saÃ­da padronizadasâ€.*/
 
-#include<stdlib.h>/*Este é uma biblioteca de cabeçalho contém funções para manipulação da alocação de memória,
-conversão de números representados em strings para algum tipo de dado que representa números (como double),
-entre outras funcionalidades úteis, como funções de algoritmos de ordenação.*/
-#include<locale.h>/*essa é uma biblioteca feita para permitir que use acentos nas frases em portugues*/
+#include<stdlib.h>/*Este Ã© uma biblioteca de cabeÃ§alho contÃ©m funÃ§Ãµes para manipulaÃ§Ã£o da alocaÃ§Ã£o de memÃ³ria,
+conversÃ£o de nÃºmeros representados em strings para algum tipo de dado que representa nÃºmeros (como double),
+entre outras funcionalidades Ãºteis, como funÃ§Ãµes de algoritmos de ordenaÃ§Ã£o.*/
+#include<locale.h>/*essa Ã© uma biblioteca feita para permitir que use acentos nas frases em portuguÃªs*/
 
 void main(){
-setlocale(LC_ALL,"");//Permite usar acentos, faz com que o terminal use a lingua padrão do sistema se for em portugues irá permitir acentos.
+setlocale(LC_ALL,"");//Permite usar acentos, faz com que o terminal use a lingua padrÃ£o do sistema se for em portuguÃªs irÃ¡ permitir acentos.
 int a=5;
-printf("olá, orçamento,você,memória, alocação ");
+printf("olÃ¡, orÃ§amento,vocÃª,memÃ³ria, alocaÃ§Ã£o ");
 
-printf("\nO valor do a é: %d",a);//deve ser usado o "%d" para imprimir na tela valores inteiros.
-//printf("\nO valor do b é: %d",b);
-//printf("\nO valor da soma do a e b é: %d",a+b);/* aqui faz a soma de "a" e "b".*/
+printf("\nO valor do a Ã©: %d",a);//deve ser usado o "%d" para imprimir na tela valores inteiros.
+//printf("\nO valor do b Ã©: %d",b);
+//printf("\nO valor da soma do a e b Ã©: %d",a+b);/* aqui faz a soma de "a" e "b".*/
 printf("\nEscreva um novo valor para o a: ");
-scanf("%d", &a);/* o "scanf" serva para ler oque está escrito dentro dos parênteses. o "&" muda o valor que já está na memória da variavel.
-se o valor do "a" é 5 com  o "&" e "scanf" vai ler um novo valor para "a"*/
+scanf("%d", &a);/* o "scanf" serva para ler oque estÃ¡ escrito dentro dos parÃªnteses. o "&" muda o valor que jÃ¡ estÃ¡ na memÃ³ria da variavel.
+se o valor do "a" Ã© 5 com  o "&" e "scanf" vai ler um novo valor para "a"*/
 printf("O valor de a mudou para: %d", a);
 
 float b=5.5;
-printf("\nO valor do b é: %f",b);/*se o "%d" é para valores inteiros,
- o "%f" é para números com casas decimais,
- números com virgulas ou com valores quebrados tipo float*/
+printf("\nO valor do b Ã©: %f",b);/*se o "%d" Ã© para valores inteiros,
+ o "%f" Ã© para nÃºmeros com casas decimais,
+ nÃºmeros com virgulas ou com valores quebrados tipo float*/
  printf("\nEscreva um novo valor para o b: ");
 scanf("%f", &b);
 printf("O valor de b mudou para: %f", b);
 
-char c='t';/*antes de ler o valor para char é bom sempre limpar o buffer,o buffer é uma memória temporaria de leitura que guarda a variavel*/
-printf("\nO valor do c é: %c",c);/*o "%c" em vez de valores ele lê caracteres*/
+char c='t';/*antes de ler o valor para char Ã© bom sempre limpar o buffer,o buffer Ã© uma memÃ³ria temporaria de leitura que guarda a variavel*/
+printf("\nO valor do c Ã©: %c",c);/*o "%c" em vez de valores ele lÃª caracteres*/
 printf("\nEscreva um novo valor para o c: ");
-fflush(stdin);/*essa função limpa o buffer principal que é o stdin.h, mas ali devemos apenas colocas o stdin.*/
+fflush(stdin);/*essa funÃ§Ã£o limpa o buffer principal que Ã© o stdin.h, mas ali devemos apenas colocas o stdin.*/
 scanf("%c", &c);
 printf("O valor de c mudou para: %c", c);
 }
